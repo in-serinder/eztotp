@@ -1,0 +1,5 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke
+        android:width="3px"
+        android:color="#000000" /> <!-- 设置边框宽度和颜色 -->
+</shape>

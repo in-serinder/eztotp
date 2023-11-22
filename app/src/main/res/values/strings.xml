@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">eztotp</string>
+    
+<!--    menu-->
+    <string name="left_menu">Menu</string>
+    <string name="authy">Authy-TOTP</string>
+    <string name="termux">termux</string>
+    <string name="ssh">SSH-remote</string>
+    <string name="raudio">Raudio-sound</string>
+    <string name="ase_aut">Authy-AES</string>
+</resources>

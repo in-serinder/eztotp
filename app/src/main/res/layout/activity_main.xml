@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <androidx.appcompat.widget.Toolbar
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:background="#1296db"
+       tools:ignore="MissingConstraints"></androidx.appcompat.widget.Toolbar>
+
+
+
+   <FrameLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       tools:ignore="MissingConstraints">
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Authenticator-TOTP"
+          android:textSize="20dp"
+          android:layout_marginTop="12dp"
+          android:layout_marginLeft="20dp"
+          tools:ignore="MissingConstraints" />
+
+      <TextView
+          android:id="@+id/unixtxprint"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="15dp"
+          android:layout_marginTop="55dp"
+          android:text="Unix time:"
+          android:textColor="#7f7f7f"
+          android:textSize="10dp"
+          tools:ignore="TextSizeCheck"></TextView>
+
+      <TextView
+          android:id="@+id/pwt"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="15dp"
+          android:layout_marginTop="85dp"
+          android:text="PWT:"
+          android:textColor="#7f7f7f"
+          android:textSize="10dp"
+          tools:ignore="TextSizeCheck"></TextView>
+
+      <FrameLayout
+          android:layout_width="1000px"
+          android:layout_height="90dp"
+          android:layout_marginLeft="40px"
+          android:layout_marginTop="120dp"
+          android:background="@drawable/border"
+          >
+
+         <SeekBar
+            android:id="@+id/tptpsk"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="10px"
+             android:progressDrawable="@drawable/seekbar"
+             android:thumb="@null"
+             ></SeekBar>
+
+         <TextView
+             android:id="@+id/codeprt"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="15dp"
+             android:layout_marginTop="20dp"
+             android:text="Code:"
+             android:textColor="#7f7f7f"
+             android:textSize="25dp"
+             ></TextView>
+
+         <TextView
+             android:id="@+id/nexts"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="15dp"
+             android:layout_marginTop="60dp"
+             android:text="距离下次刷新alt:"
+             android:textColor="#7f7f7f"
+             android:textSize="11dp"></TextView>
+
+      </FrameLayout>
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+         android:text="更新的设置(Nuro Setting)"
+         android:layout_marginTop="220dp"
+         android:layout_marginLeft="20dp"></TextView>
+
+
+
+<!--      pane2-setting area-->
+      <FrameLayout
+          android:layout_width="1000px"
+          android:layout_height="444dp"
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="251dp"
+          android:background="@drawable/border">
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="10dp"
+             android:layout_marginTop="17dp"
+             android:text="更新秘钥:"></TextView>
+
+         <EditText
+             android:id="@+id/new_pwt_input"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="70dp"></EditText>
+
+         <Button
+             android:id="@+id/updatebtn"
+             android:layout_width="100dp"
+             android:layout_height="40dp"
+             android:layout_marginLeft="125dp"
+             android:layout_marginTop="55dp"
+             android:text="Update"
+             android:onClick="click"
+             android:background="@drawable/button"></Button>
+
+<!--         list view-->
+         <ScrollView
+             android:layout_width="1000px"
+             android:layout_height="330dp"
+             android:layout_marginTop="115dp"
+             android:background="@drawable/border">
+
+
+         <ListView
+             android:id="@+id/pwtlist_view"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+
+             ></ListView>
+
+         </ScrollView>
+
+
+      </FrameLayout>
+
+      </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
